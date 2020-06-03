@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    int a[100][100],i,j,h,k,l=0,m=0;
+scanf("%d",&h);
+for(i=0;i<h;i++)
+{
+    for(j=0;j<h;j++)
+    {
+        scanf("%d",&k);
+    if (k>=-100 && k<=100)
+    {
+        a[i][j]=k;
+    }
+
+    }
+}
+for(i=0;i<h;i++)
+{
+    for(j=0;j<h;j++)
+    {
+    if (i+j+1==h)
+        {
+l=l+a[i][j];
+        }
+    if (i==j)
+        {
+m=m+a[i][j];
+        }
+    }
+}
+if(l>m)
+printf("%d",l-m);
+else
+printf("%d",m-l);
+}
