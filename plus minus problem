@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+int d,i,t[100],k,a=0,b=0,c=0;
+scanf("%d",&d);
+if(d>0 && d<=100)
+{
+for(i=0;i<d;i++)
+{scanf("%d",&k);
+if(k>=-100 && k<=100)
+{
+t[i]=k;
+if(t[i]>0)
+{
+    a++;
+}
+else if(t[i]<0)
+{
+    b++;
+}
+else
+{
+c++;
+}
+}
+}
+}
+
+printf("%f\n",(float)a/(float) d);
+printf("%f\n",(float)b/(float)d);
+printf("%f\n",(float) c/(float) d);
+}
