@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main()
+{
+int a[60],i,b,c;
+scanf("%d",&b);
+if(b>=1 && b<=60)
+{
+for(i=0;i<b;i++)
+{
+scanf("%d",&c);
+if(c>=0 && c<=100)
+{
+    a[i]=c;
+}
+}
+for(i=0;i<b;i++)
+{
+if(a[i]<38)
+{
+    printf("%d\n",a[i]);
+}
+else
+{
+if ((a[i]+2)%5==0)
+{
+    printf("%d\n",a[i]+2);
+}
+else if ((a[i]+1)%5==0)
+{
+   printf("%d\n",a[i]+1);
+
+}
+else
+{
+   printf("%d\n",a[i]);
+
+}
+}
+}
+}
+return 0;
+}
